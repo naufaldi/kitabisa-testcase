@@ -1,5 +1,6 @@
 import Container from 'components/common/Container'
 import Grid from 'components/common/Grid'
+import Card from 'components/homepage/Card'
 import Filter from 'components/homepage/Filter'
 import Layout from 'components/layout/Layout'
 
@@ -16,6 +17,11 @@ function App() {
             />
           </div>
           <Filter />
+        </Grid>
+        <Grid className="mt-12">
+          <Card className="col-span-4" />
+          <Card className="col-span-4" />
+          <Card className="col-span-4" />
         </Grid>
       </Container>
     </Layout>
