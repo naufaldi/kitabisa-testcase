@@ -23,10 +23,10 @@ const fetcher = (url: string) =>
 const ListCard: FC = () => {
   const sortData = useRecoilValue(filterAtom)
   const sortingData = (a: kitabisaProps, b: kitabisaProps) => {
-    if (sortData === 'asc') {
+    if (sortData === 'asc-goal') {
       return a.donation_target - b.donation_target
     }
-    return b.donation_target - a.donation_target
+    return a.days_remaining - b.days_remaining
   }
   const { data, error } = useSWR(
     'https://cors-anywhere.herokuapp.com/https://storage.googleapis.com/southern-waters-642.appspot.com/fe_code_challenge/campaign.json',
@@ -57,6 +57,15 @@ const ListCard: FC = () => {
 
   return (
     <>
+      <div className="col-span-full">
+        <h6 className="text-sm">
+          Filter Campaign by{' '}
+          <strong>
+            {' '}
+            {sortData === 'asc-goal' ? 'Target Donasi' : 'Sisa Hari'}
+          </strong>
+        </h6>
+      </div>
       {dataFilter?.map((item: kitabisaProps) => (
         <Card key={item.id} data={item} className="col-span-4" />
       ))}

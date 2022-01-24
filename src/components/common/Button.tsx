@@ -26,7 +26,7 @@ const Button: FC<ButtonProps> = ({
       disabled={disabled}
       className={clsx(
         'inline-flex items-center rounded-md transition-all',
-        variant === 'primary' && 'bg-ocean-500 text-white',
+        variant === 'primary' && 'bg-ocean-500 text-white hover:bg-ocean-600',
         variant === 'secondary' && 'bg-secondary text-white',
         size === 'small' && 'px-4 py-2',
         size === 'medium' && 'px-6 py-3',

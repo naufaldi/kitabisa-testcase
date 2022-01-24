@@ -2,7 +2,7 @@ import { atom, selector } from 'recoil'
 
 export const filterAtom = atom({
   key: 'filterAtom',
-  default: 'asc'
+  default: 'asc-goal'
 })
 
 export const filterAscSelector = selector({
