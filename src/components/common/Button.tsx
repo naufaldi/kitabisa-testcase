@@ -9,6 +9,7 @@ interface ButtonProps {
   children: React.ReactNode
   className?: string
   disabled?: boolean
+  onClick?: () => void
 }
 const Button: FC<ButtonProps> = ({
   children,
@@ -16,6 +17,7 @@ const Button: FC<ButtonProps> = ({
   className,
   variant = 'primary', // default value
   size = 'medium', // default value
+  onClick,
   ...props
 }) => {
   return (
@@ -31,6 +33,7 @@ const Button: FC<ButtonProps> = ({
         size === 'large' && 'px-8 py-4',
         className
       )}
+      onClick={onClick}
       {...props}
     >
       {children}
