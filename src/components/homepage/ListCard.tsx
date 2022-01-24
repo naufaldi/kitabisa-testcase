@@ -6,8 +6,9 @@ import Alert from 'components/common/Alert'
 import SkeletonCard from 'components/common/SkeletonCard'
 import { useRecoilState, useRecoilValue } from 'recoil'
 import { filterAtom } from 'recoil/filter'
+import { kitabisaProps } from 'types/data'
 
-const fetcher = (url: any) =>
+const fetcher = (url: string) =>
   axios
     .get(url, {
       method: 'GET',
@@ -21,6 +22,12 @@ const fetcher = (url: any) =>
 
 const ListCard: FC = () => {
   const sortData = useRecoilValue(filterAtom)
+  const sortingData = (a: kitabisaProps, b: kitabisaProps) => {
+    if (sortData === 'asc') {
+      return a.donation_target - b.donation_target
+    }
+    return b.donation_target - a.donation_target
+  }
   const { data, error } = useSWR(
     'https://cors-anywhere.herokuapp.com/https://storage.googleapis.com/southern-waters-642.appspot.com/fe_code_challenge/campaign.json',
     fetcher
@@ -44,26 +51,15 @@ const ListCard: FC = () => {
     )
   }
 
-  console.log('data', data.data)
-
-  const sortAsc = data.data.sort(
-    (a: any, b: any) => a.donation_target - b.donation_target
-  )
-  const sortDsc = data.data.sort(
-    (a: any, b: any) => b.donation_target - a.donation_target
+  const dataFilter = data.data.sort((a: kitabisaProps, b: kitabisaProps) =>
+    sortingData(a, b)
   )
 
-  console.log('sortAsc', sortAsc)
-  console.log('sortDsc', sortDsc)
   return (
     <>
-      {sortData === 'asc'
-        ? sortAsc?.map((item: any) => (
-            <Card key={item.id} data={item} className="col-span-4" />
-          ))
-        : sortDsc?.map((item: any) => (
-            <Card key={item.id} data={item} className="col-span-4" />
-          ))}
+      {dataFilter?.map((item: kitabisaProps) => (
+        <Card key={item.id} data={item} className="col-span-4" />
+      ))}
     </>
   )
 }

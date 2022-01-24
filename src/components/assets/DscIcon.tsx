@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-const AscIcon: FC<{ className?: string }> = ({ className, ...props }) => {
+const DscIcon: FC<{ className?: string }> = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -20,4 +20,4 @@ const AscIcon: FC<{ className?: string }> = ({ className, ...props }) => {
   )
 }
 
-export default AscIcon
+export default DscIcon
