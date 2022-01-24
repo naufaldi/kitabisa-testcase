@@ -2,11 +2,10 @@ import React, { FC } from 'react'
 
 const Footer: FC = () => {
   return (
-    <div className="mt-auto">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
-      exercitationem? Magnam alias soluta omnis modi perferendis nobis magni
-      tempora architecto porro, ducimus deleniti, nostrum necessitatibus impedit
-      aut, blanditiis reiciendis harum!
+    <div className="mt-auto pt-8 flex">
+      <footer className="mx-auto py-4">
+        <h6>Frontend Test Kitabisa</h6>
+      </footer>
     </div>
   )
 }
