@@ -203,6 +203,11 @@
     "@babel/plugin-syntax-jsx" "^7.16.7"
     "@babel/types" "^7.16.7"
 
+"@babel/standalone@^7.16.4":
+  "integrity" "sha512-Yhx3HHbBLCE0AzpmAXQ2h0adOz0N4Ga64EC7BibFPbdE0c9/davL/NCdHJf/xuQUbwtCg99g1ZLUsMvTLgBQ2w=="
+  "resolved" "https://registry.npmjs.org/@babel/standalone/-/standalone-7.16.12.tgz"
+  "version" "7.16.12"
+
 "@babel/template@^7.16.7":
   "integrity" "sha512-I8j/x8kHUrbYRTUxXrrMbfCa7jxkE7tZre39x3kjr9hvI82cK1FfqLygotcWN5kdPGWcLdWMHpSBavse5tWw3w=="
   "resolved" "https://registry.npmjs.org/@babel/template/-/template-7.16.7.tgz"
@@ -426,6 +431,17 @@
   dependencies:
     "@typescript-eslint/types" "5.10.0"
     "eslint-visitor-keys" "^3.0.0"
+
+"@vitejs/plugin-legacy@^1.6.4":
+  "integrity" "sha512-geH2F3hTRN++E4n9NZ0JFumxIWUKqW4FA9PAgM7Q6RvUOUUYW4tlURhEmCBYfZSN24H/yX3mEolX+wFVErsAYQ=="
+  "resolved" "https://registry.npmjs.org/@vitejs/plugin-legacy/-/plugin-legacy-1.6.4.tgz"
+  "version" "1.6.4"
+  dependencies:
+    "@babel/standalone" "^7.16.4"
+    "core-js" "^3.19.1"
+    "magic-string" "^0.25.7"
+    "regenerator-runtime" "^0.13.9"
+    "systemjs" "^6.11.0"
 
 "@vitejs/plugin-react@^1.0.7":
   "integrity" "sha512-cMUBDonNY8PPeHWjIrYKbRn6bLSunh/Ixo2XLLBd3DM0uYBZft+c+04zkGhhN1lAwvoRKJ2FdtvhGhPgViHc6w=="
@@ -700,6 +716,11 @@
   "version" "1.8.0"
   dependencies:
     "safe-buffer" "~5.1.1"
+
+"core-js@^3.19.1":
+  "integrity" "sha512-vVl8j8ph6tRS3B8qir40H7yw7voy17xL0piAjlbBUsH7WIfzoedL/ZOr1OV9FyZQLWXsayOJyV4tnRyXR85/ag=="
+  "resolved" "https://registry.npmjs.org/core-js/-/core-js-3.20.3.tgz"
+  "version" "3.20.3"
 
 "cosmiconfig@^7.0.1":
   "integrity" "sha512-a1YWNUV2HwGimB7dU2s1wUMurNKjpx60HxBB6xUM8Re+2s1g1IIfJvFR0/iCF+XHdE0GMTKTuLR32UQff4TEyQ=="
@@ -1523,6 +1544,13 @@
   dependencies:
     "yallist" "^4.0.0"
 
+"magic-string@^0.25.7":
+  "integrity" "sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA=="
+  "resolved" "https://registry.npmjs.org/magic-string/-/magic-string-0.25.7.tgz"
+  "version" "0.25.7"
+  dependencies:
+    "sourcemap-codec" "^1.4.4"
+
 "merge2@^1.3.0", "merge2@^1.4.1":
   "integrity" "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg=="
   "resolved" "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz"
@@ -1865,6 +1893,11 @@
     "slash" "^3.0.0"
     "tslib" "^1.9.3"
 
+"regenerator-runtime@^0.13.9":
+  "integrity" "sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA=="
+  "resolved" "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz"
+  "version" "0.13.9"
+
 "regexp.prototype.flags@^1.3.1":
   "integrity" "sha512-pMR7hBVUUGI7PMA37m2ofIdQCsomVnas+Jn5UPGAHQ+/LlwKm/aTLJHdasmHRzlfeZwHiAOaRSo2rbBDm3nNUQ=="
   "resolved" "https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.4.1.tgz"
@@ -1987,6 +2020,11 @@
   "resolved" "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz"
   "version" "0.5.7"
 
+"sourcemap-codec@^1.4.4":
+  "integrity" "sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA=="
+  "resolved" "https://registry.npmjs.org/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz"
+  "version" "1.4.8"
+
 "string.prototype.matchall@^4.0.6":
   "integrity" "sha512-6WgDX8HmQqvEd7J+G6VtAahhsQIssiZ8zl7zKh1VDMFyL3hRTJP4FTNA3RbIp2TOQ9AYNDcc7e3fH0Qbup+DBg=="
   "resolved" "https://registry.npmjs.org/string.prototype.matchall/-/string.prototype.matchall-4.0.6.tgz"
@@ -2057,6 +2095,11 @@
   "integrity" "sha512-UsM0eo5T+kRPyWFZtWRx2XR5qzohs/LS4lDC0GCyLpCYFmsfTk28UCVDbOE9+KtoXY4FnwHYiF+ZYEU3hnJ1lQ=="
   "resolved" "https://registry.npmjs.org/swr/-/swr-1.1.2.tgz"
   "version" "1.1.2"
+
+"systemjs@^6.11.0":
+  "integrity" "sha512-hqTN6kW+pN6/qro6G9OZ7ceDQOcYno020zBQKpZQLsJhYTDMCMNfXi/Y8duF5iW+4WWZr42ry0MMkcRGpbwG2A=="
+  "resolved" "https://registry.npmjs.org/systemjs/-/systemjs-6.12.1.tgz"
+  "version" "6.12.1"
 
 "tailwindcss@^3.0.15", "tailwindcss@^3.0.7":
   "integrity" "sha512-bT2iy7FtjwgsXik4ZoJnHXR+SRCiGR1W95fVqpLZebr64m4ahwUwRbIAc5w5+2fzr1YF4Ct2eI7dojMRRl8sVQ=="
@@ -2177,7 +2220,7 @@
     "recrawl-sync" "^2.0.3"
     "tsconfig-paths" "^3.9.0"
 
-"vite@^2.7.2", "vite@>2.0.0-0":
+"vite@^2.0.0", "vite@^2.7.2", "vite@>2.0.0-0":
   "integrity" "sha512-Mq8et7f3aK0SgSxjDNfOAimZGW9XryfHRa/uV0jseQSilg+KhYDSoNb9h1rknOy6SuMkvNDLKCYAYYUMCE+IgQ=="
   "resolved" "https://registry.npmjs.org/vite/-/vite-2.7.13.tgz"
   "version" "2.7.13"
