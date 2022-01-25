@@ -1,7 +1,6 @@
 import Container from 'components/common/Container'
 import Grid from 'components/common/Grid'
 import SeoComponent from 'components/common/SeoComponent'
-import Card from 'components/homepage/Card'
 import Filter from 'components/homepage/Filter'
 import ListCard from 'components/homepage/ListCard'
 import Layout from 'components/layout/Layout'
@@ -15,7 +14,7 @@ function App() {
           <Grid>
             <div className="col-span-2 flex items-center justify-center lg:col-span-3">
               <img
-                src="/src/public/kitabisa.png"
+                src="/kitabisa.png"
                 className="mr-auto h-14 w-auto lg:mx-auto lg:h-20"
                 alt="Logo Kita Bisa"
               />

@@ -3,10 +3,10 @@ import React, { FC } from 'react'
 
 const Header: FC = () => {
   return (
-    <header className="fixed top-0 bg-ocean inset-x-0">
+    <header className="fixed inset-x-0 top-0 bg-ocean">
       <Container>
-        <nav className="flex justify-between items-center py-3 mx-auto max-w-screen-xl">
-          <img src="/src/public/logo-kita.png" className="h-8 w-auto mx-auto" />
+        <nav className="mx-auto flex max-w-screen-xl items-center justify-between py-3">
+          <img src="/logo-kita.png" className="mx-auto h-8 w-auto" />
         </nav>
       </Container>
     </header>
