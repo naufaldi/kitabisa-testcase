@@ -42,18 +42,18 @@ add `https://cors-anywhere.herokuapp.com/` to .env
 ## Folder Structure
 
 ```
-├── dist # Compiled files
-├── src # Source files
-│ └── components # all of component files
-│ ├── assets # component related to icon / svg
-│ ├── common # component related to common like button / alert
-│ ├── homepage # component base on usage in pages
-│ ├── layout # component base on layout like header, and footer,
-│ |── lib # utils/helpers code
-│ ├── pages # pages files
-│ ├── recoil # Global State
-│ ├── styles # Style file
-│ └─── types # Type data
+├── dist              # Compiled files
+├── src               # Source files
+│ └── components      # all of component files
+│ ├── assets          # component related to icon / svg
+│ ├── common          # component related to common like button / alert
+│ ├── homepage        # component base on usage in pages
+│ ├── layout          # component base on layout like header, and footer,
+│ |── lib             # utils/helpers code
+│ ├── pages           # pages files
+│ ├── recoil          # Global State
+│ ├── styles          # Style file
+│ └─── types          # Type data
 └── README.md
 ```
 
