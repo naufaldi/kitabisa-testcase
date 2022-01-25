@@ -7,7 +7,7 @@ import { filterAtom } from 'recoil/filter'
 
 const Filter: FC = () => {
   const [sort, setSort] = useRecoilState(filterAtom)
-  console.log('sort', sort)
+  // console.log('sort', sort)
   const handleClickGoal = () => {
     setSort('asc-goal')
   }
@@ -15,14 +15,14 @@ const Filter: FC = () => {
     setSort('asc-days')
   }
   return (
-    <div className="col-span-4 lg:col-span-4 lg:col-end-13 flex justify-end space-x-3 items-center">
+    <div className="col-span-4 flex items-center justify-end space-x-3 lg:col-span-4 lg:col-end-13">
       <Button
         variant="primary"
         size="small"
         className="text-sm lg:text-base"
         onClick={handleClickGoal}
       >
-        <AscIcon className="h-4 w-4 lg:h-6 lg:w-6 mr-2" />
+        <AscIcon className="mr-2 h-4 w-4 lg:h-6 lg:w-6" />
         Sort by Goal
       </Button>
       <Button
@@ -31,7 +31,7 @@ const Filter: FC = () => {
         className="text-sm lg:text-base"
         onClick={handleClickDays}
       >
-        <AscIcon className="h-4 w-4 lg:h-6 lg:w-6 mr-2" />
+        <AscIcon className="mr-2 h-4 w-4 lg:h-6 lg:w-6" />
         Sort by Days
       </Button>
     </div>

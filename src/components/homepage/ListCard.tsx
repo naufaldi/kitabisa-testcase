@@ -22,7 +22,7 @@ const fetcher = (url: string) =>
 
 const ListCard: FC = () => {
   const sortData = useRecoilValue(filterAtom)
-  const baseURL = import.meta.env.VITE_URL_API
+  const baseURL = process.env.VITE_URL_API
   const sortingData = (a: kitabisaProps, b: kitabisaProps) => {
     if (sortData === 'asc-goal') {
       return a.donation_target - b.donation_target
