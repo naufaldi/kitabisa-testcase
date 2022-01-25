@@ -22,16 +22,14 @@ const fetcher = (url: string) =>
 
 const ListCard: FC = () => {
   const sortData = useRecoilValue(filterAtom)
+  const baseURL = import.meta.env.VITE_URL_API
   const sortingData = (a: kitabisaProps, b: kitabisaProps) => {
     if (sortData === 'asc-goal') {
       return a.donation_target - b.donation_target
     }
     return a.days_remaining - b.days_remaining
   }
-  const { data, error } = useSWR(
-    'https://cors-anywhere.herokuapp.com/https://storage.googleapis.com/southern-waters-642.appspot.com/fe_code_challenge/campaign.json',
-    fetcher
-  )
+  const { data, error } = useSWR(`${baseURL}`, fetcher)
 
   if (error) {
     return (

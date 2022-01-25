@@ -13,10 +13,10 @@ function App() {
       <Layout>
         <Container>
           <Grid>
-            <div className="col-span-2 lg:col-span-3 flex items-center justify-center">
+            <div className="col-span-2 flex items-center justify-center lg:col-span-3">
               <img
                 src="/src/public/kitabisa.png"
-                className="h-14 lg:h-20 w-auto mr-auto lg:mx-auto"
+                className="mr-auto h-14 w-auto lg:mx-auto lg:h-20"
                 alt="Logo Kita Bisa"
               />
             </div>
