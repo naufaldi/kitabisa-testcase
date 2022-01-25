@@ -41,7 +41,7 @@ add `https://cors-anywhere.herokuapp.com/` to .env
 
 ## Folder Structure
 
-.
+```
 ├── dist # Compiled files
 ├── src # Source files
 │ └── components # all of component files
@@ -55,6 +55,7 @@ add `https://cors-anywhere.herokuapp.com/` to .env
 │ ├── styles # Style file
 │ └─── types # Type data
 └── README.md
+```
 
 ## Preview
 
